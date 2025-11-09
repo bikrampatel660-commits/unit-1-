@@ -1,0 +1,21 @@
+/* css */
+
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(135deg,#2563eb,#9333ea);
+  color: #fff; display: flex; justify-content: center; align-items: center;
+  height: 100vh;
+}
+.box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px; border-radius: 10px; width: 280px; text-align: center;
+}
+input, textarea, button {
+  width: 100%; margin: 5px 0; padding: 8px; border: none; border-radius: 5px;
+}
+button { background:#facc15; color:#000; font-weight:bold; cursor:pointer; }
+#preview {
+  background: rgba(255,255,255,0.2);
+  margin-top:10px; padding:8px; border-radius:5px; font-size:14px; text-align:left;
+}

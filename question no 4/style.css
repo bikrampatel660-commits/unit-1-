@@ -1,0 +1,28 @@
+/* css */
+body {
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+}
+input, select, button {
+  width: 100%; margin: 6px 0; padding: 8px;
+  border: none; border-radius: 5px;
+}
+button {
+  background: #facc15; color: #000; font-weight: bold; cursor: pointer;
+}
+li {
+  background: rgba(255,255,255,0.2);
+  margin-top: 4px; border-radius: 5px; padding: 5px;
+}

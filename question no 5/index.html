@@ -1,0 +1,26 @@
+<!--Design an interactive job application form where users can submit their details, preview the application in real-time, and receive feedback for errors or missing fields. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h2>💼 Job Application</h2>
+    <!-- id changed from "name" to "kine" -->
+    <input id="kine" placeholder="Full Name">
+    <input id="email" type="email" placeholder="Email">
+    <input id="pos" placeholder="Position">
+    <textarea id="about" placeholder="About Yourself"></textarea>
+    <button id="submitBtn">Submit</button>
+
+    <h3>Preview</h3>
+    <div id="preview">Fill details to preview...</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!--A event registration form for a college fest that dynamically updates the list of participants, validates input, and uses the Browser Object Model for confirmation dialogs and redirection. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Fest Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>🎓 Fest Registration</h2>
+    <input id="name" placeholder="Full Name">
+    <input id="email" type="email" placeholder="Email">
+    <select id="event">
+      <option value="">Select Event</option>
+      <option>Dance</option><option>Hackathon</option><option>Bands</option>
+    </select>
+    <button id="regBtn">Register</button>
+    <h3>Participants</h3>
+    <ul id="list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
