@@ -1,0 +1,79 @@
+<!-- 1.⁠ ⁠Develop a college event landing page with proper typography, grid layout, accessibility features using Tailwind CSS.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Fest 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-blue-700 text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">CollegeFest</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:text-yellow-300">About</a>
+      <a href="#events" class="hover:text-yellow-300">Events</a>
+      <a href="#register" class="hover:text-yellow-300">Register</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+    <h2 class="text-4xl font-bold mb-3">Welcome to College Fest 2025!</h2>
+    <p class="mb-6">Join us for creativity, culture & fun.</p>
+    <button id="registerBtn" class="bg-yellow-400 text-black px-6 py-2 rounded-md hover:bg-yellow-500">Register Now</button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-3xl mx-auto text-center py-10 px-4">
+    <h3 class="text-2xl font-bold mb-3">About</h3>
+    <p>CollegeFest 2025 unites students from all over India for competitions, workshops, and cultural events.</p>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="bg-gray-100 py-10">
+    <h3 class="text-2xl font-bold text-center mb-6">Events</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+      <div class="bg-white p-4 rounded shadow">
+        <img src="pexels-caleboquendo-34623186.jpg" alt="Music Event" class="rounded mb-3 w-full h-40 object-cover">
+        <h4 class="font-semibold">Battle of Bands</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="hackerthon.jpg" alt="Coding Event" class="rounded mb-3 w-full h-40 object-cover">
+        <h4 class="font-semibold">Hackathon</h4>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="pexels-annamw-1047442.jpg" alt="Dance Event" class="rounded mb-3 w-full h-40 object-cover">
+        <h4 class="font-semibold">Dance Mania</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register -->
+  <section id="register" class="max-w-md mx-auto py-10 px-4">
+    <h3 class="text-2xl font-bold text-center mb-4">Register</h3>
+    <form id="eventForm" class="bg-white p-6 rounded shadow space-y-3">
+      <input type="text" name="name" placeholder="Full Name" required class="w-full border p-2 rounded">
+      <input type="email" name="email" placeholder="Email" required class="w-full border p-2 rounded">
+      <select name="event" required class="w-full border p-2 rounded">
+        <option value="">Select Event</option>
+        <option>Battle of Bands</option>
+        <option>Hackathon</option>
+        <option>Dance Mania</option>
+      </select>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white text-center py-4">
+    <p>&copy; 2025 CollegeFest</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
